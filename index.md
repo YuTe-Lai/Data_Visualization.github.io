@@ -1,9 +1,9 @@
 # Plotly
 參考資料：<br>
-(https://kknews.cc/zh-tw/code/vr2jmeq.html)
-(https://kknews.cc/zh-tw/news/mnyeakg.html)
-(https://www.luoow.com/dc_tw/200924837)
-[markers](https://guides.github.com/features/mastering-markdown/)
+[https://kknews.cc/zh-tw/code/vr2jmeq.html](https://kknews.cc/zh-tw/code/vr2jmeq.html)<br>
+[https://kknews.cc/zh-tw/news/mnyeakg.html](https://kknews.cc/zh-tw/news/mnyeakg.html)<br>
+[https://www.luoow.com/dc_tw/200924837](https://www.luoow.com/dc_tw/200924837)<br>
+[markers](https://guides.github.com/features/mastering-markdown/)<br>
 
 ## 離線繪圖方式
   Plotly中繪製圖像有在線和離線兩種方式，在線繪圖需要註冊帳號獲取API key。而離線繪圖分成兩種`plotly.offline.plot()`和`plotly.offline.iplot()`兩種，前者會在當前工作目錄下生成一個html格式的圖，而後者為jupyter notebook中專用的方法，直接將圖嵌在ipynb文件中。<br>
