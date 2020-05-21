@@ -1,5 +1,34 @@
-## Ploty
+# Plotly
 參考資料：(https://kknews.cc/zh-tw/code/vr2jmeq.html)
+
+## 離線繪圖方式
+  Plotly中繪製圖像有在線和離線兩種方式，在線繪圖需要註冊帳號獲取API key。而離線繪圖分成兩種`plotly.offline.plot()`和`plotly.offline.iplot()`兩種，前者會在當前工作目錄下生成一個html格式的圖，而後者為jupyter notebook中專用的方法，直接將圖嵌在ipynb文件中。<br>
+（注意，在jupyter notebook中使用`plotly.offline.iplot()`時，需要在之前運行`plotly.offline.init_notebook_mode()`以完成繪圖代碼的初始化，否則會報錯）。<br>簡單舉例：
+
+```python
+import plotly
+import plotly.graph_objs as go
+
+plotly.offline.init_notebook_mode()    #初始化jupyter notebook中的繪圖模式
+
+plotly.offline.plot([{'x':[1,2,3], 'y':[4,8,1]}],
+image_height=600,
+image_width=1600)                      #繪製基本折線圖，尺寸為1600*600
+![image of 折線圖](https://github.com/YuTe-Lai/plotly.github.io/blob/master/plotly1.png)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
