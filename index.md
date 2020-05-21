@@ -14,7 +14,8 @@ plotly.offline.init_notebook_mode()    #初始化jupyter notebook中的繪圖模
 plotly.offline.plot([{'x':[1,2,3], 'y':[4,8,1]}],
 image_height=600,
 image_width=1600)                      #繪製基本折線圖，尺寸為1600*600
-![image of 折線圖](https://github.com/YuTe-Lai/plotly.github.io/blob/master/plotly1.png)
+![Image of plotly1]
+(https://github.com/YuTe-Lai/plotly.github.io/blob/master/plotly1.png)
 ```
 
 
