@@ -21,14 +21,71 @@ image_width=1600)                      #繪製基本折線圖，尺寸為1600*60
 ```
 ![Image of plotly1](plotly1.png)
 
-## Graph對象
-  
+  在plotly中的圖層元素(數據)與圖的背景、座標軸等是獨立分開的。前者使用Graph_objs定義好參數後便能將數據圖形化。但如果想要在背景圖層上有更多自定義化的內容，就需要定義Layout()。
+
+## Graph_objs
+  先根據繪圖需求從graph_objs中導入相應的obj，接下來需要做的事情是基於待展示的數據，為指定的obj配置相關參數，這在plotly中稱為構造traces
+### 建造Traces
+  二維散點圖
+```python
+#創建1000筆二維正分佈數據
+n = 1000
+random_x = np.random.randn(n)
+random_y = np.random.randn(n)
+
+#建造Trace
+trace = go.Scatter(
+x = random_x,
+y = random_y,
+mode = 'markers')
+
+#將Trace儲存於列表
+data = [trace]
+
+#初始化繪圖模式
+plotly.offline.init_notebook_mode()
+
+#開始繪圖
+plotly.offline.iplot(data, filename='basic-scatter')
+```
+![Image of plotly2](plotly2.png)
+<br>
 
 
+一張圖中可以疊加多個trace
+```python
+n = 100
+random_x = np.linspace(0,10,n)
+random_y0 = np.random.randn(n)+5
+random_y1 = np.random.randn(n)
+random_y2 = np.random.randn(n)-5 
+#+5、-5是為了方便辨識三種圖
 
+trace0 = go.Scatter(
+x = random_x,
+y = random_y0,
+mode = 'markers',
+name = 'markers'
+)
 
+trace1 = go.Scatter(
+x = random_x,
+y = random_y1,
+mode = 'lines+markers',
+name = 'lines+markers'
+)
 
+trace2 = go.Scatter(
+x = random_x,
+y = random_y2,
+mode = 'lines',
+name = 'lines')
 
+data = [trace0,trace1,trace2]
+plotly.offline.init_notebook_mode()
+plotly.offline.iplot(data, filename='basic-scatter')
+```
+![Image of plotly3](plotly3.png)
 
 
 
