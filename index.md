@@ -16,7 +16,7 @@ image_height=600,
 image_width=1600)                      #繪製基本折線圖，尺寸為1600*600
 ```
 ![Image of plotly1]
-(https://github.com/YuTe-Lai/plotly.github.io/blob/master/plotly1.png)
+(https://github.com/YuTe-Lai/plotly.github.io/plotly1.png)
 
 
 
