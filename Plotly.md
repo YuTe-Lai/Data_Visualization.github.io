@@ -47,7 +47,7 @@ iplot([{'x':[1,2,3], 'y':[4,8,1]}],
 image_height=600,
 image_width=1600)             #繪製基本折線圖，尺寸為1600*600
 ```
-![Image of plotly1](plotly1.png)
+![Image of plotly1](img/plotly1.png)
 
 
 ## Traces
@@ -76,7 +76,7 @@ plotly.offline.init_notebook_mode()
 #開始繪圖
 plotly.offline.iplot(data, filename='basic-scatter')
 ```
-![Image of plotly2](plotly2.png)
+![Image of plotly2](img/plotly2.png)
 <br>
 
 
@@ -113,7 +113,7 @@ data = [trace0,trace1,trace2]
 plotly.offline.init_notebook_mode()
 plotly.offline.iplot(data, filename='basic-scatter')
 ```
-![Image of plotly3](plotly3.png)
+![Image of plotly3](img/plotly3.png)
 
 
 
