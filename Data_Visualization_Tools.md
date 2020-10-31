@@ -11,6 +11,10 @@ Plotly是用來繪製互動式圖表的工具，在plotly中的圖形、元素(�
 3.Data：將所有Traces存成列表，這樣便能在同一張圖表上畫多個圖形。<br>
 
 ```python
+import plotly
+import plotly.graph_objs as go
+import numpy as np
+
 n = 100
 random_x = np.linspace(0,10,n)
 random_y = np.random.randn(n)
